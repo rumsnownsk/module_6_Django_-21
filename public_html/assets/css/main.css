@@ -1,0 +1,248 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+    /*font-family: "PT Sans", serif;*/
+    font-family: Arial, sans-serif;
+
+    color: #000;
+    font-size: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p, a {
+    margin: 0 auto;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container, .row, .section-left {
+    height: 100%;
+}
+
+.underscore {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc; /* Цвет линии */
+    margin: 8px 0; /* Отступы сверху и снизу */
+}
+
+.section-left {
+    background-color: #232425;
+    padding: 20px;
+}
+
+.section-left__content li {
+    margin: 10px 0;
+}
+
+.section-left p, a {
+    color: white;
+    display: block;
+    height: auto;
+    width: auto;
+    padding: 2px 5px;
+}
+
+.section-left a:hover {
+    background-color: #2052fa;
+    border-radius: 3px;
+}
+
+/*=====   страница Главная      ===========*/
+
+
+.section-right {
+    background-color: #f7f7f7;
+}
+
+.section-right__header {
+    margin-top: 50px;
+}
+
+/* Центрируем сами карточки в ряду (на случай, если колонок меньше 12) */
+.section-right__content {
+    display: flex;
+    justify-content: space-evenly; /* Центрирует колонки по горизонтали */
+    flex-wrap: wrap;
+}
+
+/* Сама карточка — делаем её блочной и центрируем контент внутри */
+.product-card {
+    background-color: #f5f5f5;
+    border: 2px solid #c7c7c7;
+    border-radius: 8px;
+    padding: 16px;
+    color: #333;
+    max-width: 300px;
+    box-sizing: border-box;
+    text-align: center; /* Центрирует текст и кнопку внутри карточки */
+    margin: 20px; /* Отступ снизу, чтобы на мобильных карточки не слипались */
+}
+
+.product-title {
+    margin: 0 0 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 10px;
+}
+
+.product-price {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 12px 0;
+    color: #1a1a1a;
+}
+
+.product-features {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.buy-btn {
+    width: 100%; /* Кнопка на всю ширину карточки */
+    padding: 10px 0;
+    background-color: transparent;
+    color: #0d6efd;
+    border: 1px solid #0d6efd;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.buy-btn:hover {
+    background-color: #eef2ff;
+}
+
+/*=====   конец Главная      ===========*/
+
+/*=====   страница Каталог      ===========*/
+
+.catalog-card {
+    width: 320px;
+    margin: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: #fff;
+}
+
+.card__thumbnail {
+    height: 180px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-size: 16px;
+}
+
+.card__body {
+    padding: 16px;
+}
+
+.card__text {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 16px;
+}
+
+.card__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.card__btn {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    background: transparent;
+    color: #333;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.card__btn:hover {
+    border-color: #999;
+    color: #000;
+}
+
+.card__time {
+    color: #888;
+    font-size: 13px;
+}
+/*========    Контакты    =======*/
+
+.contact{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.contact-form{
+    margin: 0 50px;
+    background-color: #f5f5f5;
+    border: 2px solid #c7c7c7;
+    border-radius: 8px;
+    padding: 16px;
+    color: #333;
+}
+
+.contact-description{
+    margin: 0 50px;
+}
+
+.contact-description h2{
+    font-size: 26px;
+    text-align: left;
+    font-weight: bold;
+}
+.contact-description p{
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.secure{
+    width: 100%;
+    display: flex;
+    font-size: 16px;
+    align-self: center;
+    justify-content: flex-end;
+    color: gray;
+}
