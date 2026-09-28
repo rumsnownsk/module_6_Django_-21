@@ -70,6 +70,21 @@ a {
     border-radius: 3px;
 }
 
+.section-left__content a {
+  text-decoration: none;
+}
+
+.section-left__content a:hover {
+  /*color: #0d6efd; !* цвет при наведении *!*/
+}
+
+/* активный пункт */
+.section-left__content a.active {
+  color: #0d6efd;
+  font-weight: 600;
+  /* или можно добавить подчёркивание/фон — на выбор */
+  /*border-bottom: 2px solid #0d6efd;*/
+}
 /*=====   страница Главная      ===========*/
 
 
